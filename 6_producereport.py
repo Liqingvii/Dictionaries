@@ -207,3 +207,19 @@ ProduceDictionary={
     }
 }
 
+
+
+for key in ProduceDictionary:
+    cost = ProduceDictionary[key]['cost']
+    amt_sold = ProduceDictionary[key]['amt_sold']
+    stated_total = ProduceDictionary[key]['total']
+    cal_total = round(cost * amt_sold, 2)
+    if cal_total != stated_total:
+        print(f"produce name: {key}\nCalculated total: ${cal_total}\nStated total: ${stated_total}\n\n\n")
+
+        
+
+
+
+
+
